@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.wizardev.hideordissplaypswd.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f5f5f5"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:minHeight="40dp">
+
+        <ImageView
+            android:id="@+id/img_ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:minHeight="20dp"
+            android:minWidth="16dp"
+            android:src="@mipmap/phone" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_ph"
+            android:text="手机号："
+            android:textColor="@color/_333333"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/phone_num_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/bt_getCode"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="11" />
+
+        <Button
+            android:id="@+id/bt_getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_btn_bg"
+            android:minHeight="27dp"
+            android:minWidth="80dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:minHeight="40dp">
+
+        <ImageView
+            android:id="@+id/img_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:minHeight="20dp"
+            android:minWidth="16dp"
+            android:src="@mipmap/val" />
+
+        <TextView
+            android:id="@+id/tv_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_val"
+            android:text="验证码："
+            android:textColor="@color/_333333"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_val"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:minHeight="40dp">
+
+        <ImageView
+            android:id="@+id/img_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:minHeight="20dp"
+            android:minWidth="16dp"
+            android:src="@mipmap/pas" />
+
+        <TextView
+            android:id="@+id/tv_pas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_pass"
+            android:text="密   码："
+            android:textColor="@color/_333333"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/paswd_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_eye"
+            android:layout_toRightOf="@+id/tv_pas"
+            android:background="@null"
+            android:inputType="textWebPassword" />
+
+        <ImageView
+            android:id="@+id/img_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:minHeight="12dp"
+            android:minWidth="20dp"
+            android:src="@mipmap/hid" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/search_btn_bg"
+        android:minHeight="44dp"
+        android:minWidth="260dp"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>
+
+
